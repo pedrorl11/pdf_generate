@@ -1,33 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
 
-form{
-    font-family: 'Courier Prime', monospace !important;
-}
-
 body{
     background-color: #d2700da2 !important;
 }
 
-img{
+#alinhar{
     width: 100mm !important;
-    height: 150mm !important;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
 }
 
-#imagem-container {
-    position: relative;
-    width: 100%; /* Ajuste conforme a largura desejada */
-    height: 100vh; /* Ajuste conforme a altura desejada */
-  }
-
-#imagem-container img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
 #content{
-    z-index: 2 !important;
+    padding: 0 !important;
+    font-family: 'Courier Prime', monospace !important;
+    width: 100mm !important;
+    height: 150mm !important;
+    background-image: url("img/Fundo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
 }
 
 #botao{
@@ -44,13 +36,25 @@ input:focus{
 } 
 
 input{
+    padding-top: 0 !important;
     background-color: transparent !important;
     border-color: black !important;
     font-size: 13px !important;
     height: 5mm !important;
-    border-top: 0 !important;
-    border-right: 0 !important;
-    border-left: 0 !important;
+    border: 0 !important;
     border-radius: 0 !important;
-    display: none !important;
+    position: absolute;
+}
+
+#nome{
+    padding-right: 35px;
+    top: 77px;
+    left: 10px;
+}
+
+#cpf{
+    padding-left: 3px;
+    width: 125px;
+    top: 114px;
+    left: 10px;
 }

@@ -6,8 +6,8 @@ btnGenerate.addEventListener("click", () =>{
     const nome = nomeInput.value;
     
     const options = {
-        margin: [10,10,10,10],
         filename: `${nome}.pdf`,
+        scale: 3,
         jsPDF:{unit:"mm", format:"a4", orientation:"portrait"}
     };
     if (nome.trim() !== '') {
