@@ -7,3 +7,5 @@ Site simples que gera um pdf das informações prescritas.
   O pdf ser o conteudo por inteiro;
   
   Melhorar qualidade da imagem de fundo no pdf;
+
+  Responsividade;
