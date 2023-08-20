@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&family=Inter:wght@100;200;300;400;500;600&family=Noto+Sans:wght@500&display=swap');
 
+/*@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');*/
 body{
     background-color: #d2700da2 !important;
 }
@@ -13,10 +14,10 @@ body{
 
 #content{
     padding: 0 !important;
-    font-family: 'Courier Prime', monospace !important;
+    font-family: 'Courier Prime', sans-serif !important;
     width: 100mm !important;
     height: 150mm !important;
-    background-image: url("img/Fundo.png");
+    background-image: url("img/fundo.png");
     background-repeat: no-repeat;
     background-size: contain;
     position: relative;
@@ -43,18 +44,115 @@ input{
     height: 5mm !important;
     border: 0 !important;
     border-radius: 0 !important;
+    position: relative;
+    padding: 0 !important;
+}
+.alinhar{
     position: absolute;
+    left: 12px;
+    display: flex;
+    flex-direction: row;
+    padding-right: 15px !important;
 }
-
+/* ----------------------------- */
 #nome{
-    padding-right: 35px;
-    top: 77px;
-    left: 10px;
+    top: 74px;
+    left: 12px;
+    padding-right: 25px !important;
 }
-
+/* ----------------------------- */
+#c-tel{
+    top: 110px;
+}
 #cpf{
-    padding-left: 3px;
-    width: 125px;
-    top: 114px;
-    left: 10px;
+    width: 118px;
+}
+#nasc{
+    margin-left: 6px !important;
+    width: 104px;
+}
+#telefone{
+    margin-left: 6px !important;
+    width: 120px;
+}
+/* ----------------------------- */
+#m-mar{
+    top: 147px;
+}
+#modelo{
+    width: 205px;
+}
+#marca{
+    margin-left: 6px !important;
+    width: 142px;
+}
+/* ----------------------------- */
+#s-fre{
+    top: 184px;
+}
+#num_serie{
+    width: 118px;
+}
+#transmissao{
+    margin-left: 6px !important;
+    width: 135px;
+}
+#freios{
+    margin-left: 6px !important;
+    padding-right: 2px !important;
+}
+/* ----------------------------- */
+#p-cor{
+    top: 220px;
+}
+#pneus{
+    width: 108px;
+}
+#quadro{
+    margin-left: 6px !important;
+    width: 60px;
+}
+#aro{
+    margin-left: 6px !important;
+    width: 57px;
+}
+#cor{
+    margin-left: 6px !important;
+    padding-right: 2px !important;
+}
+/* ----------------------------- */
+#endereco{
+    top: 239px;
+    margin-left: 12px;
+    padding-right: 25px !important;
+}
+/* ----------------------------- */
+#c-com{
+    top:295px;
+}
+#cep{
+    width: 88px;
+}
+#numero{
+    margin-left: 6px !important;
+    width: 73px;
+}
+#complemento{
+    margin-left: 6px !important;
+    padding-right: 2px !important;
+}
+/* ----------------------------- */
+#b-uf{
+    top:335px;
+}
+#bairro{
+    width: 140px;
+}
+#cidade{
+    margin-left: 7px !important;
+    width: 168px;
+}
+#uf{
+    margin-left: 6px !important;
+    padding-right: 2px !important;
 }

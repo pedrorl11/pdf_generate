@@ -1,4 +1,9 @@
 const btnGenerate = document.querySelector("#botao");
+const inputs = document.querySelectorAll("input");
+
+inputs.forEach(input => {
+  input.value = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa';
+});
 
 btnGenerate.addEventListener("click", () =>{
     const content = document.querySelector("#content");
@@ -6,9 +11,19 @@ btnGenerate.addEventListener("click", () =>{
     const nome = nomeInput.value;
     
     const options = {
+        margin: [15, 0, 15, 0],
         filename: `${nome}.pdf`,
-        scale: 3,
-        jsPDF:{unit:"mm", format:"a4", orientation:"portrait"}
+        scale: 4,
+        image: { type: 'jpeg', quality: 1},
+        html2canvas: {
+            dpi: 300,
+            scale:4,
+            enableLinks:true,
+            DisablePdfCompression:1,
+            letterRendering: true,
+            useCORS: true
+          },
+        jsPDF:{unit:"pt", format:"a4", orientation:"portrait"}
     };
     if (nome.trim() !== '') {
         html2pdf().set(options).from(content).save();
