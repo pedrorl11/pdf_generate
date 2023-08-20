@@ -1,9 +1,4 @@
 const btnGenerate = document.querySelector("#botao");
-const inputs = document.querySelectorAll("input");
-
-inputs.forEach(input => {
-  input.value = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa';
-});
 
 btnGenerate.addEventListener("click", () =>{
     const content = document.querySelector("#content");
