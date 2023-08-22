@@ -5,8 +5,8 @@ btnGenerate.addEventListener("click", () => {
   const nomeInput = document.querySelector("#nome");
   const nome = nomeInput.value;
 
-  const width_in_inches = 11.5;
-  const height_in_inches = 17;
+  const width_in_inches = 11;
+  const height_in_inches = 16.75;
 
   const width_in_mm = width_in_inches * 25.4;
   const height_in_mm = height_in_inches * 25.4;
