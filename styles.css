@@ -139,7 +139,7 @@ input{
 }
 #complemento{
     margin-left: 6px !important;
-    padding-right: 2px !important;
+    width: 180px;
 }
 /* ----------------------------- */
 #b-uf{
