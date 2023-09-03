@@ -5,5 +5,3 @@ Site simples que gera um pdf das informações prescritas.
   Preencher automatico caracteres (cpf, telefone, etc);
   
   O pdf nao cortar;
-
-  Responsividade;

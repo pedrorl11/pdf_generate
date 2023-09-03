@@ -26,13 +26,13 @@
 
                 <div id="c-tel" class="alinhar">
                     <div>
-                        <input type="text" class="form-control" id="cpf">
+                        <input type="text" class="form-control" id="cpf" oninput="formatCPF(this)">
                     </div>
                     <div>
-                        <input type="text" class="form-control" id="nasc">
+                        <input type="text" class="form-control" id="nasc" oninput="formatDate(this)">
                     </div>
                     <div>
-                        <input type="text" class="form-control" id="telefone">
+                        <input type="text" class="form-control" id="telefone" oninput="formatTelefone(this)">
                     </div>
                 </div>
 
@@ -78,7 +78,7 @@
 
                 <div id="c-com" class="alinhar">
                     <div>
-                        <input type="text" class="form-control" id="cep">
+                        <input type="text" class="form-control" id="cep" oninput="formatCEP(this)">
                     </div>            
                     <div>
                         <input type="text" class="form-control" id="numero">
@@ -96,7 +96,7 @@
                         <input type="text" class="form-control" id="cidade">
                     </div>            
                     <div>
-                        <input type="text" class="form-control" id="uf">
+                        <input type="text" class="form-control" id="uf" oninput="formatUF(this)">
                     </div>
                 </div>
             </div>
